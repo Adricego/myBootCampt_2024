@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div>
+        <h2>Pelicula que veré hoy!!</h2>
+        <button type="button" onclick="getPelicualaAleatorioHola">Dime que Pelicula veré</button>
+
+    </div>
+
+    <div>
+        
+    </div>
+
+    
+</body>
+<script src="assets/js/jquery.min.js"></script>
+
+
+<Script>
+    $(document).ready(function(){})
+
+
+    function getPelicualaAleatorioHola(){
+        console.log("Inicio de peticion Ajax")
+        $.ajax({
+            url: "https://api.themoviedb.org/3/movie/popular?api_key=2b4f7d8f8f8a7d1c0f",
+            method: 'Get',
+            data:{nombre: 'carlos'}
+    
+
+        })
+        
+    }
+
+
+</Script>
+
+
+
+</html>
